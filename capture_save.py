@@ -13,7 +13,7 @@ if not os.path.exists(base_dir):
     os.makedirs(base_dir)
 
 # 저장 디렉토리 설정
-dir = os.path.join(base_dir, "손")
+dir = os.path.join(base_dir, "rock")
 if not os.path.exists(dir):
     os.makedirs(dir)
 
@@ -37,7 +37,7 @@ while cap.isOpened():
         x, y, w, h = roi
         if w > 0 and h > 0:  # ROI 크기가 유효한 경우만
             roi_frame = frame[y:y + h, x:x + w]
-            file_name_path = os.path.join(dir, f'손_{cnt}.jpg')
+            file_name_path = os.path.join(dir, f'rock_{cnt}.jpg')
             cv2.imwrite(file_name_path, roi_frame)  # ROI만 저장
             cnt += 1
             if cnt >= target_cnt:

@@ -56,8 +56,8 @@ def split_data_by_ratio(source_dir, dest_dir, train_ratio=0.6, test_ratio=0.2, v
     print(f"Train files: {len(train_files)}, Test files: {len(test_files)}, Validation files: {len(valid_files)}.")
 
 # Parameters for the script
-source_directory = "/path/to/your/source/folder"  # Replace with your source directory path
-destination_directory = "/path/to/your/destination/folder"  # Replace with your destination directory path
+source_directory = "your_path"  # Replace with your source directory path
+destination_directory = "your_path"  # Replace with your destination directory path
 train_ratio = 0.6  # 60% of the data for training
 test_ratio = 0.2   # 20% of the data for testing
 valid_ratio = 0.2  # 20% of the data for validation

@@ -2,12 +2,6 @@ import os
 import shutil
 
 def separate_images_and_labels(dataset_dir):
-    """
-    Separates images (.jpg) and labels (.txt) into 'images' and 'labels' subdirectories within a dataset folder.
-
-    Parameters:
-    dataset_dir (str): Path to the dataset directory (e.g., test, train, valid) containing mixed .jpg and .txt files.
-    """
     # Paths for the new directories
     images_dir = os.path.join(dataset_dir, "images")
     labels_dir = os.path.join(dataset_dir, "labels")
@@ -27,7 +21,7 @@ def separate_images_and_labels(dataset_dir):
     print(f"Finished separating images and labels in {dataset_dir}.")
 
 # Path to the dataset directory
-dataset_directory = "/home/happy/Desktop/rocky/project_me/test"  # Update with your actual directory path
+dataset_directory = "/home/happy/Desktop/rocky/project_me/test"  h
 
 # Run the separation
 separate_images_and_labels(dataset_directory)
